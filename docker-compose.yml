@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  oraclelinux:
+    build: .
+    container_name: oraclelinux-ssh
+    #Si imposta l'hostname personalizzato
+    hostname: Oracle-Linux  
+    ports:
+      - "2222:22"
+    restart: always
