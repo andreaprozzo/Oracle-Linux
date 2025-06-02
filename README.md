@@ -5,17 +5,20 @@ Oracle Linux/
 └── docker-compose.yml
 
 
-
-Per creare una build specifica e lanciarla con un solo comando abbiamo la necessità di creare due files
+# Per creare una build specifica e lanciarla con un solo comando abbiamo la necessità di creare due files
 1-Dockerfile -> contenente tutta configurazione dell'immagine del docker che lanceremo
 2-docker-compose.yml -> contenente il codice necessario all'avvio del container
 
 I due files sono presenti nella cartella. 
 
-Per lanciare la creazione della build e l'avvio del container eseguire -> docker-compose up -d
+
+# Eseguire la build
+Per lanciare la creazione della build e l'avvio del container eseguire (internamente alla cartella che contiene entrambe i files indicati) -> docker-compose up -d
+
+# Collegarsi alla VM da una console esterna in SSH
 Per collegarsi via SSH al container eseguire -> ssh root@localhost -p 2222 / password -> oracle
 
-Altri comandi utili per il docker-compose 
+# Altri comandi utili per il docker-compose 
 1-docker-compose down -> arresta il container
 2-docker-compose restart -> riavvia il container
 3-docker-compose build -> esegue la nuova build dell'immagine.
